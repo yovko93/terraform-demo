@@ -3,7 +3,6 @@ name: 'Terraform Plan And Apply'
 on:
   push:
     branches: [ "master" ]
-  pull_request:
 
 permissions:
   contents: read
@@ -73,4 +72,4 @@ jobs:
         path: .
 
     - name: Terraform Apply
-      run: terraform apply -auto-aprove tfplan
+      run: terraform apply -auto-aprove tfplan.out
