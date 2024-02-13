@@ -1,8 +1,7 @@
 name: 'Terraform Plan And Apply'
 
 on:
-  push:
-    branches: [ "master" ]
+  workflow_dispatch:
 
 permissions:
   contents: read
